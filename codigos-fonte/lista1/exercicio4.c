@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-float calculo(float nota1,  float nota2,  float nota3) {
-    return (nota1 + nota2 + nota3) / 3;
-}
+float calculo(float nota1,  float nota2,  float nota3);
 
 int main()
 {
@@ -30,4 +28,8 @@ int main()
     }
 
     return 0;
+}
+
+float calculo(float nota1,  float nota2,  float nota3) {
+    return (nota1 + nota2 + nota3) / 3;
 }

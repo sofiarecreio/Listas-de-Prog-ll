@@ -1,16 +1,6 @@
 #include <stdio.h>
 
-int mdc(int x, int y) {
-    int resto;
-
-    while (y != 0) {
-        resto = x % y;
-        x = y;
-        y = resto;
-    }
-
-    return x;
-}
+int mdc(int x, int y);
 
 int main() {
     int x, y;
@@ -26,4 +16,16 @@ int main() {
     printf("O MDC de %d e %d é: %d\n", x, y, resultado);
 
     return 0;
+}
+
+int mdc(int x, int y) {
+    int resto;
+
+    while (y != 0) {
+        resto = x % y;
+        x = y;
+        y = resto;
+    }
+
+    return x;
 }

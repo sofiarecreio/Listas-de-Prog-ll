@@ -1,15 +1,6 @@
 #include <stdio.h>
 
-unsigned int inverte(unsigned int num) {
-    unsigned int invertido = 0;
-
-    while (num > 0) {
-        invertido = invertido * 10 + (num % 10);
-        num /= 10;
-    }
-
-    return invertido;
-}
+unsigned int inverte(unsigned int num);
 
 int main() {
     unsigned int num, invertido;
@@ -22,4 +13,15 @@ int main() {
     printf("Número invertido: %u\n", invertido);
 
     return 0;
+}
+
+unsigned int inverte(unsigned int num) {
+    unsigned int invertido = 0;
+
+    while (num > 0) {
+        invertido = invertido * 10 + (num % 10);
+        num /= 10;
+    }
+
+    return invertido;
 }

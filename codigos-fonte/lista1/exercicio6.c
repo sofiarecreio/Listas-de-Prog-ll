@@ -1,6 +1,20 @@
 #include <stdio.h>
 #include <math.h>
 
+void calculo(float a, float b, float c);
+
+int main()
+{
+    float a, b, c;
+
+    printf("Digite os coeficientes (a, b, c): ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    calculo(a, b, c);
+
+    return 0;
+}
+
 void calculo(float a, float b, float c) {
     float delta, x1, x2;
 
@@ -15,16 +29,4 @@ void calculo(float a, float b, float c) {
     } else {
         printf("As raízes são complexas"); 
     }
-}
-
-int main()
-{
-    float a, b, c;
-
-    printf("Digite os coeficientes (a, b, c): ");
-    scanf("%f %f %f", &a, &b, &c);
-
-    calculo(a, b, c);
-
-    return 0;
 }

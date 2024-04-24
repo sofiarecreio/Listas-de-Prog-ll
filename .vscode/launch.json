@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/Sofia Garcia/Desktop/ProgII/codigos-fonte/lista3",
+      "program": "c:/Users/Sofia Garcia/Desktop/ProgII/codigos-fonte/lista3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
